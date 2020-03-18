@@ -19,7 +19,7 @@ find_resources_from_plan = func(type) {
     # Iterate over the named resources of desired type in the module
     for tfplan.module(path).resources[type] else {} as name, instances {
       print("name:\t", name)
-      print("instance:\t", instance)
+      print("instances:\t", instances)
       # Iterate over resource instances
       for instances as index, r {
         print("index:\t", index)
